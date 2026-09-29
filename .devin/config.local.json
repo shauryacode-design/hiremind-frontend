@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Exec(ls)",
+      "Exec(npm create)",
+      "Exec(npm init)",
+      "Exec(npm install)",
+      "Exec(npx tailwindcss)",
+      "Exec(mkdir)",
+      "Exec(npm run)",
+      "Exec(npm uninstall)"
+    ]
+  }
+}

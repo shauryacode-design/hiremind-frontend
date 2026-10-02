@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import ProtectedRoute from './components/ui/ProtectedRoute';
+import ServerStartingNotice from './components/ui/ServerStartingNotice';
 
 // Pages
 import LoginPage from './pages/LoginPage';
@@ -21,6 +22,7 @@ function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
+        <ServerStartingNotice />
         <Routes>
           {/* Public routes */}
           <Route path="/login" element={<LoginPage />} />
